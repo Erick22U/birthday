@@ -215,12 +215,18 @@ $('document').ready(function(){
 
 	$('#poem2').click(function(){
 		$(this).fadeOut('slow');
+		$('.poem1').fadeOut('fast').promise().done(function(){
+			$('.poem2').fadeIn('slow');
+		});
 		$(this).fadeOut('slow').delay(6000).promise().done(function(){
 			$('#last_message').fadeIn('slow');
 		});		
 	});
 	$('#last_message').click(function(){
 		$(this).fadeOut('slow');	
+		$('.poem2').fadeOut('fast').promise().done(function(){
+			$('.finalWords').fadeIn('slow');
+		});
 	});
 });
 

@@ -1271,16 +1271,15 @@ audio {
 	margin-top: 200px;
 	display: none;
 }
-.message, .poem1, .poem2, .lastWords p {
+.message, .poem1, .poem2, .finalWords{
 	font-family: 'Signika', sans-serif;
 	font-size: 30px;
 	text-transform: uppercase;
-	color: #C4515C;
-	text-shadow: 2px 2px 2px #FFF;
+	color: white;
+	text-shadow: 2px 2px 2px #F000;
 	display: none;
 	font-weight: bold;
 }
-
 .btn-primary {
         border-color: #466baf;
         padding: 10px;
